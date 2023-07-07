@@ -15,6 +15,8 @@
                <th class="text-left">
                Teléfono
                </th>
+               <th class="text-left">               
+               </th>
             </tr>
          </thead>
          <tbody>
@@ -23,9 +25,17 @@
                :key="item.numeroDocumento"
             >
                <td>{{ item.numeroDocumento }}</td>
-               <td>{{ item.primerNombre +" "+ item.segundoNombre }}</td>
+               <td>{{ item.primerNombre + " " + item.segundoNombre }}</td>
                <td>{{ item.apellidos }}</td>
                <td>{{ item.telefono }}</td>
+               <td>
+                  <a href="'/verpersona/' + item.">
+                     <v-btn 
+                        color="success"
+                        variant="text"
+                     >Ver mas</v-btn>
+                  </a>
+               </td>
             </tr>
          </tbody>
       </v-table>
